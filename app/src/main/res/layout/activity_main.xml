@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre du film" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date et Heure de la projection"
+        android:inputType="datetime"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarScenario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="0"
+        android:hint="Note Scénario"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarRealisateur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="0"
+        android:hint="Note Réalisation"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarMusique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="0"
+        android:hint="Note Musique"/>
+
+    <EditText
+        android:id="@+id/editTextCritique"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Critique"
+        android:inputType="textMultiLine"
+        android:lines="4"/>
+
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partager par Email"/>
+</LinearLayout>
